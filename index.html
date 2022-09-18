@@ -1,195 +1,142 @@
 <html>
    <head>
       <title>30MFF!</title>
+      <link rel="stylesheet" href="style.css">
    </head>
+
    <body>
-      <img src="images/Dinosaur_Game.png"/>
-      <h2>
-         No internet
-      </h2>
-      <h3>
-         <ul>
-            <li>Checking the network cables, modem, and router</li>
-            <li>Reconnecting to Wi-Fi</li>
-         </ul>
-      </h3>
-      <h5>
-         ERR_INTERNET_DISCONNECTED
-      </h5>
-      <!-- double downwards chevron arrows at the bottom at page, appear after 3 seconds -->
+      <div class="container">
+         <div class="dino">
+            <img class="dinosaur" src="images/dino.png"/>
+            <h2>
+               No internet
+            </h2>
+            <h3>
+               <ul>
+                  <li>Checking the network cables, modem, and router</li>
+                  <li>Reconnecting to Wi-Fi</li>
+               </ul>
+            </h3>
+            <h5>
+               ERR_INTERNET_DISCONNECTED
+            </h5>
+         </div>
+         <a class="link" href="#container1"><img class="arrow" src="images/animation arrow.gif"></a>
+      </div>
       
-      <style>
-         h4 {text-align: center;}
-      </style>
-      <h4>
-         Do you love the internet as it brings you so many benefits,<br>from acquiring knowledge, to enjoying entertainment, to staying connected, to making money?
-      </h4>
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button1 {background-color: #00ff66;} /* Yes */
-         .button2 {background-color: #fb0e02;} /* No */
-      </style>
-      <button class="button button1">Yes</button>
-      <button class="button button2">No</button>
+      <div class="container_button" id="container1">
+         <div class="prompt">
+            <h4>
+               Do you love the internet as it brings you so many benefits,<br> from acquiring knowledge, to enjoying entertainment, to staying connected, to making money?
+            </h4>
+         </div>
+         <div class="button_class">
+            <button class="button" id="button1"><a href="#container2">Yes</a></button> 
+            <button class="button" id="button2"><a href="#container2">No</a></button>
+         </div>
+      </div>
 
-      <h4>
-         Do you love your phone as it enables you to access said benefits?
-      </h4>
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button1 {background-color: #00ff66;} /* Yes */
-         .button2 {background-color: #fb0e02;} /* No */
-      </style>
-      <button class="button button1">Yes</button>
-      <button class="button button2">No</button>
 
-      <h4>
-         Here’s a clip of people, like you and me, using their phones.
-      </h4>
+      <div class="container_button" id="container2">
+         <div class="prompt" id="prompt1">
+            <h4>
+               Do you love your phone as it enables you to access said benefits?
+            </h4>
+         </div>
+         <div class="button_class">
+            <button class="button" id="button1"><a href="#container3">Yes</a></button>
+            <button class="button" id="button2"><a href="#container3">No</a></button>
+         </div>
+      </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lCbaglEYSxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="container_button" id="container3">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/lCbaglEYSxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <a class="link" href="#container4"><img class="arrow" src="images/animation arrow.gif" style="margin-top: 80px ;"></a>
+      </div>
 
-      <h4>
-         Do you see their faces?
-      </h4>
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button1 {background-color: #00ff66;} /* Yes */
-         .button2 {background-color: #fb0e02;} /* No */
-      </style>
-      <button class="button button1">Yes</button>
-      <button class="button button2">No</button>
+      <div class="container_button" id="container4">
+         <div class="prompt">
+            <h4>
+               Do you see their faces?            
+            </h4>
+         </div>
+         <div class="button_class">
+            <button class="button" id="button1"><a href="#container5">Yes</a></button>
+            <button class="button" id="button2"><a href="#container5">No</a></button>
+         </div>
+      </div>
 
-      <h4>
-         Exactly…<br>When your eyes are glued to your phones, no eye contact or face-to-face interaction can be made…
-      </h4>
+      <div class="container_arrow" id="container5">
+         <div class="prompt" id="exactly">
+            <h4>
+               Exactly…<br>When your eyes are glued to your phones, <br> no eye contact or face-to-face interaction can be made…         
+            </h4>
+         </div>
+      <a class="link" href="#container6" id="address"><img class="arrow" src="images/animation arrow.gif" style="margin-top:70px ;"></a>
+      </div>
 
-      <h4>
-         Just look up!<br>There might be someone needing your help!
-      </h4>
+      <div class="container_arrow" id="container6">
+         <div class="prompt" id="exactly">
+            <h4>
+               Just look up!<br>There might be someone needing your help!           
+            </h4>
+         </div>
+      <a class="link" href="#container_page" id="address"><img class="arrow" src="images/animation arrow.gif" style="margin-top:70px ;"></a>
+      </div>
 
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button3 {background-color: #000000;} /* Go To Homepage */
-         .button4 {background-color: #000000;} /* Behind the scene */
-         .button5 {background-color: #000000;} /* Credit */
-      </style>
-      <button class="button button3">Go To Homepage</button>
-      <button class="button button4">Behind the scene</button>
-      <button class="button button5">Credits</button>
+
+
+      <div class="container_page" id="container_page"> 
+         <button class="button_page"><a href="#homepage">Go To Homepage</a></button>
+         <button class="button_page"><a href="#scene">Behind the scene</a></button>
+         <button class="button_page"><a href="#credits">Credits</a></button>
+      </div>
 
       <!-- Behind the scene images as a collage go here -->
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button3 {background-color: #000000;} /* Go To Homepage */
-         .button6 {background-color: #000000;} /* Rewatch the film */
-         .button5 {background-color: #000000;} /* Credit */
-      </style>
-      <button class="button button3">Go To Homepage</button>
-      <button class="button button6">Rewatch the film</button>
-      <button class="button button5">Credits</button>
+      <div class ="container_page" id="scene">
+         <button class="button_page"><a href="#homepage">Go To Homepage</a></button>
+         <button class="button_page"><a href="#container_house">Rewatch the film</a></button>
+         <button class="button_page"><a href="#credits">Credits</a></button>
+      </div>
 
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button3 {background-color: #000000;} /* Go To Homepage */
-         .button6 {background-color: #000000;} /* Rewatch the film */
-         .button4 {background-color: #000000;} /* Behind the scene */
-      </style>
-      <button class="button button3">Go To Homepage</button>
-      <button class="button button6">Rewatch the film</button>
-      <button class="button button4">Behind the scene</button>
+      <div class ="container_page" id="credits">
+         <button class="button_page"><a href="#homepage">Go To Homepage</a></button>
+         <button class="button_page"><a href="#container_house">Rewatch the film</a></button>
+         <button class="button_page"><a href="#scene">Behind the scene</a></button>
+      </div>
 
-      <style>
-         h2, h3 {text-align: center;}
-      </style>
-      <h2a>
-         JUST LOOK UP!<br>A 30 MFF
-      </h2a>
-      <h3a>
-         Communications Lab - Fall 2022<br>Professor Domna Banakou
-      </h3>
+      
+         <div class="container_homepage" id="homepage">
+            <img class= "up" src="images/Just look up.png"/>
+            <h3 style="font-size: 35px;">
+               Communications Lab - Fall 2022<br>Professor Domna Banakou
+            </h3>
+            <div class ="container_homepage_button">
+               <button class="button_page"><a href="#container_house">Rewatch the film</a></button>
+               <button class="button_page"><a href="#scene">Behind the scene</a></button>
+               <button class="button_page"><a href="#credits">Credits</a></button>
+            </div>
+         </div>
 
-      <style>
-         .button {
-           border: none;
-           color: white;
-           padding: 15px 32px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           font-size: 16px;
-           margin: 4px 2px;
-           cursor: pointer;
-         }
-         
-         .button6 {background-color: #000000;} /* Rewatch the film */
-      </style>
-      <button class="button button6">Rewatch the film</button>
+
+      <!-- <div class="container_homepage" id="homepage">
+         <img class= "up" src="images/Just look up.png"/>
+         <div class="look">
+            <h3 style="font-size: 20px;">
+               Communications Lab - Fall 2022<br>Professor Domna Banakou
+            </h3>
+         </div>
+         <div class ="container_homepage_button">
+            <button class="button_page"><a href="#container_house">Rewatch the film</a></button>
+            <button class="button_page"><a href="#scene">Behind the scene</a></button>
+            <button class="button_page"><a href="#credits">Credits</a></button>
+         </div>
+      </div> -->
+
+      <div class="container_button" id="container_house">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/lCbaglEYSxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <a class="link" href="#homepage"><img class="arrow" src="images/house animation.gif" style="margin-top:70px ;"></a>
+      </div>
+
    </body>
 </html>

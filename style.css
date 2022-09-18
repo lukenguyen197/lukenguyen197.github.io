@@ -1,0 +1,241 @@
+body{
+    background-color: #000000;
+    /* background-image: url(images/dino.png); */
+}
+
+h1, h2, h3, h4, h5{
+    color: #acacac;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+iframe{
+    align-self: center;
+    align-items: center;
+    margin-bottom:0 ;
+    width: 50%;
+    height: 39%;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  /* selected link */
+  a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #000000;
+}
+
+.dino{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.arrow{
+    align-items:center;
+    align-self: center;
+    margin:  0 auto;
+    align-self: flex-end;
+    margin-bottom: 1%;
+    width: 100px;
+    bottom: 30%;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.link{
+    align-items:center;
+    margin:  0 auto;
+    align-self: flex-end;
+    margin-bottom: 1%;
+    width: 50px;
+    bottom: 10%;
+}
+
+#address{
+    align-items:center;
+    margin:  0 auto;
+    align-self: flex-end;
+    margin-bottom: 1%;
+    width: 80px;
+    bottom: 10%;
+}
+
+
+.dinosaur{
+    width: 20%;
+}
+
+.prompt{
+    align-items: center;
+    align-self: center;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#exactly{
+    position: absolute;
+    left: 20%;
+    margin: 0 auto;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 90px;
+    height: 45px;
+  }
+
+  .button_class{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 100px;
+  }
+
+  .container_button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background-01.png);
+    background-size: 100%;
+  }
+
+  .container_arrow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container_homepage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_homepage_button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.1%;
+  }
+
+  .button_page{
+    border: none;
+    color: black;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+  }
+
+  .look{
+    align-self: center;
+    align-items: center;
+  }
+  
+  #button1 {background-color: #B5FFA3; font-size: 20px; color: #000000;} /* Yes */
+  #button2 {background-color: #FFA3A3; font-size: 20px; color: black} /* No */
+
+  .button3 {background-color: #000000;} /* Go To Homepage */
+  .button4 {background-color: #000000;} /* Behind the scene */
+  .button5 {background-color: #000000;} /* Credit */
+
+  .button3 {background-color: #000000;} /* Go To Homepage */
+  .button6 {background-color: #000000;} /* Rewatch the film */
+  .button5 {background-color: #000000;} /* Credit */
+
+  .up {
+    width: 50%;
+  }
+
+/* #container1{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+} */
+
+/* @media (max-width: 390px) {
+    .arrow{
+        width: 100px;
+    }
+} */
