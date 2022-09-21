@@ -1,6 +1,17 @@
 body{
     background-color: #000000;
     /* background-image: url(images/dino.png); */
+    /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0;
+
+  overflow-y: hidden;
 }
 
 h1, h2, h3, h4, h5{
@@ -11,10 +22,11 @@ h1, h2, h3, h4, h5{
 
 iframe{
     align-self: center;
-    align-items: center;
-    margin-bottom:0 ;
-    width: 50%;
-    height: 39%;
+    size: 200%;
+    /* align-items: center; */
+    margin-top: 150px;
+    width: 60%;
+    height: 60%;
 }
 
 a:link {
@@ -56,11 +68,11 @@ a:link {
     margin-bottom: 1%;
     width: 100px;
     bottom: 30%;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    animation: fadeIn 10s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+    -o-animation: fadeIn 10s;
+    -ms-animation: fadeIn 10s;
 }
 
 @keyframes fadeIn {
@@ -119,7 +131,6 @@ a:link {
     font-size: 20px;
 }
 
-
 #exactly{
     position: absolute;
     left: 20%;
@@ -148,14 +159,16 @@ a:link {
   }
 
   .container_button{
+    overflow: hidden;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
-    background-image: url(images/background-01.png);
+    background-image: url(images/background.png);
     background-size: 100%;
+    margin: 0;
   }
 
   .container_arrow{
@@ -239,3 +252,165 @@ a:link {
         width: 100px;
     }
 } */
+
+.commlab1{
+    animation: textclip 1s linear infinite alternate;
+
+    /* background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+@keyframes textclip {
+    0% {
+        background: linear-gradient(
+            #acacac, 
+            #acacac,
+            #acacac);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+        to right, 
+        #0594ff, 
+        #a223fa,
+        #ff6967
+    );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.commlab2{
+    font-size: 28px;
+    background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #ff6967;
+    }
+    to {
+      text-shadow: 0 0 30px #a223fa, 0 0 10px #0594ff;
+    }
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+#scene {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 27%;
+  align-items: center;
+  align-self: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: -160%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+  align-items: center;
+  align-self: center;
+  margin-left: 32%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
