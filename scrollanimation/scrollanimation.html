@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Scroll animation</title>
+        <link rel="stylesheet" href="scrollanimation_css.css">
+    </head>
+    <body>
+        <section>
+            <img src="images/cloud1.png" id="cloud1">
+            <img src="images/sun shining.png" id="sunshine">
+            <img src="images/text.png" id="text">
+            <img src="images/cloud4.png" id="cloud4">
+            <img src="images/cloud2.png" id="cloud2">
+            <img src="images/cloud5.png" id="cloud5">
+            <img src="images/blue sea.png" id="bluesea">
+            <img src="images/ship.png" id="ship">
+            <img src="images/cloud3.png" id="cloud3">
+            <!-- <a href = "lilmer" class = "sea" id="text">Under The Sea</a> -->
+            <!-- <img src="images/ocean.jpeg" id="ocean">
+            <img src="images/the little mermaid.png" id="lilmer"> -->
+        </section>
+        <div class="underthesea">
+            <img src="images/the little mermaid.png" id="mermaid">
+        </div>
+
+        <script>
+            let sunshine = document.getElementById('sunshine');
+            let cloud4 = document.getElementById('cloud4');
+            let cloud1 = document.getElementById('cloud1');
+            let cloud2 = document.getElementById('cloud2');
+            let cloud3 = document.getElementById('cloud3');
+            let cloud5 = document.getElementById('cloud5');
+            let under_the_sea = document.getElementById('sea');
+            let ship = document.getElementById('ship');
+            let mermaid = document.getElementById('mermaid');
+            let text = document.getElementById('text')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                sunshine.style.top = value * 1.45 + 'px';
+                cloud4.style.top = value * 1.25 + 'px';
+                cloud1.style.top = value * 1.15 + 'px';
+                cloud2.style.top = value * 0.7 + 'px';
+                cloud3.style.top = value * 0.5 + 'px';
+                cloud5.style.top = value * 0.65 + 'px';
+                ship.style.left = value * 0.05 + 'px';
+                text.style.top = value * 1.05 + 'px';
+                mermaid.style.down = value * 5 + 'px';
+            })
+
+        </script>
+    </body>
+</html>

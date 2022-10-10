@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: fantasy;
+  font-style: bold;
+}
+
+body{
+  background-color: #0767d5;
+  background-image: linear-gradient(#0767d5, #96cfed);
+  height: 800px;
+  overflow-x: hidden;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; */
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#055d80,transparent);
+  z-index: 1000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* pointer-events: none; */
+}
+
+.sea{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  font-size: 4.5em;
+  z-index: -9;
+  font-weight: 1000;
+}
+
+/* div img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.underthesea{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/ocean.png);
+  background-size: 100%;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+
+
