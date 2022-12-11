@@ -1,0 +1,232 @@
+<html>
+   <head>
+      <!-- Add title of the website -->
+      <title>30MFF!</title>
+      <!-- Link the html file to the css file -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Link the html file to the js file -->
+      <script src="script.js" defer></script>
+   </head>
+
+   <body>
+      <!-- First page -->
+		<section>
+         <img src="images/text_lukenguyen.png" id="cloud3">
+         <img src="images/cube 7.png" id="ship">
+         <img src="images/cube6.png" id="bluesea">
+			<img src="images/portrait.png" id="cloud1">
+			<img src="images/cube1.png" id="sunshine">
+			<img src="images/cube2.png" id="text">
+			<img src="images/cube3.png" id="cloud4">
+			<img src="images/cube4.png" id="cloud2">
+			<img src="images/cube5.png" id="cloud5">
+			<img src="images/cube8.png" id="cloud6">
+         <img src="images/cube9.png" id="cloud7">
+		</section>
+		<script>
+			let sunshine = document.getElementById('sunshine');
+			let cloud4 = document.getElementById('cloud4');
+			let cloud1 = document.getElementById('cloud1');
+			let cloud2 = document.getElementById('cloud2');
+			let cloud3 = document.getElementById('cloud3');
+			let cloud5 = document.getElementById('cloud5');
+			let under_the_sea = document.getElementById('sea');
+			let ship = document.getElementById('ship');
+			let mermaid = document.getElementById('mermaid');
+			let text = document.getElementById('text')
+         let cloud6 = document.getElementById('cloud6');
+         let cloud7 = document.getElementById('cloud7');
+
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+            bluesea.style.top = value * 2 + 'px';
+				sunshine.style.top = value * 3 + 'px';
+				cloud4.style.down = value * 2 + 'px';
+				cloud1.style.down = value * 2 + 'px';
+				cloud2.style.top = value * 0.9 + 'px';
+				cloud3.style.top = value * 0.75 + 'px';
+				cloud5.style.top = value * 0.5 + 'px';
+            cloud6.style.top = value * 3 + 'px';
+            cloud7.style.top = value * 0.2 + 'px';
+				ship.style.top = value * 1 + 'px';
+				text.style.top = value * 2 + 'px';
+				mermaid.style.top = value * 2 + 'px'; 
+			})
+		</script>
+      
+      <!-- This is the div for the second page -->
+
+      <!-- This is the div for the third page
+      <div class="container_button" id="container2">
+         <!- This div is for controlling the text on the page with CSS -->
+         <!-- <div class="prompt" id="prompt1">
+            <h4>
+               Do you love your phone as it enables you to access said benefits?
+            </h4>
+         </div> -->
+         <!-- The classes "button_class", "button" are for controlling the position of the 2 buttons on the webpage, and the ids "button1" and "button2" are for designing their appearances with CSS. -->
+         <!-- <div class="button_class">
+            <button class="button" id="button1"><a href="#container3">Yes</a></button>
+            <button class="button" id="button2"><a href="#container3">No</a></button>
+         </div>
+      </div> -->
+
+      <!-- This is the div for the page transitioning to the film -->
+      <div class="container_page2">
+			<div class="box1">
+				<h3 class="comicstrip">30 FMM</h3>
+				<div class="hob">
+					<h1 class="hob">About me</h1>
+				</div>
+			</div>
+			<div class="box2">
+				<h3 class="comicstrip">comic strip</h3>
+				<div class="proj">
+					<h1 class="proj">Contact
+               </h1>
+				</div> 
+			</div>
+			<div class="box3">
+				<h3 class="comicstrip">Soundscape</h3>
+				<div class="bout">
+					<h1 class="bout">Hobbies and Skills</h1>
+				</div>
+			</div>  
+			<div class="box4">
+				<h3 class="comicstrip">VIDE-OH!</h3>
+				<div class="cont">
+					<h1 class="cont">Projects</h1>
+				</div>
+			</div>  
+		</div>
+
+      <!-- This is the div for the 4th page -->
+      <!-- <div class="container_button" id="container4"> -->
+         <!-- This is for embedding the video from Youtube -->
+         <!-- <iframe width="560" height="500" src="https://www.youtube.com/embed/lCbaglEYSxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+         <!-- Here, I have to create the class "link", "arrow", and include style to control the position of the arrow gif on the webpage with CSS. -->
+         <!-- <a class="link" href="#container5"><img class="arrow" src="images/animation arrow.gif" style="margin-bottom: 60px ; margin-top: 50px; margin-left: -15px;"></a> -->
+      <!-- </div> -->
+
+      <!-- This is the div for the 5th page -->
+      <div class="container_button" id="container5">
+          <!-- This div is for controlling the text on the page with CSS -->
+         <div class="commlab2">
+            <h3>I am...</h3>
+            <h4></h4>
+            <h3 style="font-size: 25px">
+               - an NYUAD student from the class of 2025.<br><br>- majoring in Film and New Media.<br><br>- an animation geek.<br><br>- an audiophile.<br><br>- in love with astrophysics.<br><br>- a sucker for delicious pancakes.
+            </h3>
+         </div>
+         <!-- The classes "button_class", "button" are for controlling the position of the 2 buttons on the webpage, and the ids "button1" and "button2" are for designing their appearances with CSS. -->
+         <!-- <div class="button_class">
+            <button class="button" id="button1"><a href="#container6">Yes</a></button>
+            <button class="button" id="button2"><a href="#container6">No</a></button>
+         </div> -->
+      </div>
+
+      <!-- This is the div for the 6th page -->
+      <div class="container_button" id="container6">
+         <!-- This div is for controlling the text on the page with CSS -->
+         <div class="commlab2">
+            <h3>Here is my contact:</h3>
+            <h4></h4>
+            <h3 style="font-size: 25px">
+               - Email: ldn9593@nyu.edu <br><br>- UAE phone number: 0565388730<br><br>
+            </h3>
+         </div>
+         <!-- Here, I have to create the class "link", "arrow", the id "address" and include style to control the position of the arrow gif on the webpage with CSS. -->
+         <!-- <a class="link" href="#container7" id="address"><img class="arrow" src="images/animation arrow.gif" style="margin-top: 530px ;"></a> -->
+      </div>
+
+      <!-- This is the div for the 7th page -->
+      <div class="container_button" id="container7">
+         <!-- This div is for controlling the text on the page with CSS -->
+         <div class="commlab2">
+            <h3>Below is my hobbies and skills:</h3>
+         </div>
+         <!-- Here, I have to create the class "link", "arrow", the id "address" and include style to control the position of the arrow gif on the webpage with CSS. -->
+         <!-- <a class="link" href="#homepage" id="address"><img class="arrow" src="images/animation arrow.gif" style="margin-top: 530px ;"></a> -->
+      </div>
+
+      <div class="container_page3">
+			<div class="box11">
+				<h3 class="comicstrip">30 FMM</h3>
+				<!-- <div class="hob">
+					<h1 class="hob">Hobbies and skills</h1>
+				</div> -->
+			</div>
+			<div class="box22">
+				<h3 class="comicstrip">comic strip</h3>
+				<!-- <div class="proj">
+					<h1 class="proj">Projects
+               </h1>
+				</div>  -->
+			</div>
+			<div class="box33">
+				<h3 class="comicstrip">Soundscape</h3>
+				<!-- <div class="bout">
+					<h1 class="bout">About me</h1>
+				</div> -->
+			</div>  
+			<div class="box44">
+				<h3 class="comicstrip">VIDE-OH!</h3>
+				<!-- <div class="cont">
+					<h1 class="cont">Contact</h1>
+				</div> -->
+			</div>  
+		</div>
+
+      <!-- This is the div for the 8th page (homepage) -->
+      <div class="container_homepage" id="homepage">
+         <!-- This div is for adding effect to the text with CSS -->
+         <div class="commlab2">
+            <h3>These are the projects I've been up to</h3>
+         </div>
+         <!-- This div is for creating another section on the webpage to put the 3 buttons into and control their positions. The class "button_page" is also for controlling their positions and appearances with CSS. -->
+         <!-- <div class ="container_homepage_button">
+            <button class="button_page"><a href="#container_house">Rewatch the film</a></button>
+            <button class="button_page"><a href="#scene">Behind the scene</a></button>
+            <button class="button_page"><a href="#credits">Credits</a></button>
+         </div> -->
+      </div>
+
+      <!-- Behind the scene images as a slideshow go here. The slideshow is also a javascript interactivity element of the website -->
+      <!-- This is the div for the behind the scene page. The id is used to create a link with the homepage -->
+   
+	<!-- This is the div for the projects page -->
+		<div class="container_flexbox">
+			<div class="fmm">
+				<h3 class="comicstrip">30 FMM</h3>
+				<div>
+					<h1 class="text1">30MFF</h1>
+				</div>
+			</div>
+			<div class="comic">
+				<h3 class="comicstrip">comic strip</h3>
+				<div>
+					<h1 class="text2">Comic Strip</h1>
+				</div> 
+			</div>
+			<div class="sound">
+				<h3 class="comicstrip">Soundscape</h3>
+				<div>
+					<h1 class="text3">Soundscape</h1>
+				</div>
+			</div>  
+			<div class="video">
+				<h3 class="comicstrip">VIDE-OH!</h3>
+				<div>
+					<h1 class="text4">VIDEO-OH!</h1>
+				</div>
+			</div>  
+		</div>
+
+         <!-- Here, I have to create the class "link", "arrow2" (I could not use the class "arrow" nor "arrow1" because I need to control the position of the house gif solely on this webpage), the id "address" and include style to control the position of the house gif on the webpage with CSS.
+         <a class="link" href="#homepage" id="address"><img class="arrow2" src="images/house animation.gif" style="margin-top: 530px "></a>
+         </div>
+      </div>
+
+      This is the div for the rewatch the film page. The id is used to create a link with the homepage
+      <div class="container_button" id="container_house">
+         <?xml version="1.0" encoding="utf-8"?> -->

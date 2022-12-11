@@ -1,0 +1,691 @@
+body{
+  background-color: white;
+  /* This is for the website to have Full height and no margin */
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  /* This is to prevent scrolling from one div to another in html */
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+
+/* This is for controlling the appearance of the text */
+h1, h2, h3, h4, h5, p{
+  color: #acacac;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 50;
+}
+
+/* This is for controlling the size and position of the embedded video */
+iframe{
+  align-self: center;
+  size: 200%;
+  margin-top: 150px;
+  width: 60%;
+  height: 60%;
+}
+
+/* This is for hiding the decoration in text (blue and underlined) once the buttons are linked to another page */
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* This is for controlling the first page */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #000000;
+}
+
+/* This is for controlling the content in the first page */
+.dino{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+
+/* This is for controlling the position and the appearance of and adding effect to the arrow gif */
+.arrow{
+  align-items:center;
+  align-self: center;
+  margin:  0 auto;
+  align-self: flex-end;
+  margin-bottom: 1%;
+  width: 100px;
+  bottom: 30%;
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* This is also for controlling the position of the arrow gif */
+.link{
+  align-items:center;
+  margin:  0 auto;
+  align-self: flex-end;
+  margin-bottom: 1%;
+  width: 50px;
+  bottom: 10%;
+}
+
+/* This is for adjusting the size of the image on the first page */
+.dinosaur{
+  width: 20%;
+}
+
+/* This is for controlling the position of the text on the 2nd, 3rd, 6th, 7th page */
+.prompt{
+  align-items: center;
+  align-self: center;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* This is for controlling the position of the text on the 6th, 7th, behind the scene, credits page */
+#address{
+  align-items:center;
+  margin:  0 auto;
+  align-self: flex-end;
+  margin-bottom: 1%;
+  width: 80px;
+  bottom: 10%;
+}
+
+/* This is for controlling the position of the text on the 6th, 7th page */
+#exactly{
+  position: absolute;
+  left: 20%;
+  margin: 0 auto;
+}
+
+/* This is for controlling the position and appearance of the Yes, No buttons */
+.button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 90px;
+  height: 45px;
+}
+
+/* This is for controlling the position and appearance of the Yes, No buttons */
+.button_class{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 100px;
+}
+
+/* This is for controlling the appearance of the 2nd to the 7th pages */
+.container_button{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-color:#ffffff;
+  background-size: 100%;
+  margin: 0;
+}
+
+/* This is for controlling the appearance of the credit and the behind the scene pages */
+.container_page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* This is for controlling the appearance of the homepage */
+.container_homepage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* This is for controlling the appearance of the 3 buttons on the homepage */
+.container_homepage_button{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.1%;
+}
+
+/* This is for controlling the appearance of the 3 buttons on the homepage */
+.button_page{
+  border: none;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 200px;
+  height: 100px;
+}
+
+/* This is for controlling the appearances of the buttons on all the pages */
+#button1 {background-color: #B5FFA3; font-size: 20px; color: #000000;} /* Yes */
+#button2 {background-color: #FFA3A3; font-size: 20px; color: black} /* No */
+
+.button3 {background-color: #000000;} /* Go To Homepage */
+.button4 {background-color: #000000;} /* Behind the scene */
+.button5 {background-color: #000000;} /* Credit */
+
+.button3 {background-color: #000000;} /* Go To Homepage */
+.button6 {background-color: #000000;} /* Rewatch the film */
+.button5 {background-color: #000000;} /* Credit */
+
+/* This is for controlling the size and position of the "Just look up!" logo on the homepage. */
+.up {
+  width: 50%;
+}
+
+/* This is for adding effect to the text "ERR_INTERNET_DISCONNECTED" in the first page */
+.commlab1{
+  animation: textclip 1s linear infinite alternate;
+}
+
+@keyframes textclip {
+  0% {
+      background: linear-gradient(
+          #acacac, 
+          #acacac,
+          #acacac);
+      -webkit-background-clip: text;
+  }
+
+  100% {
+      background: linear-gradient(
+      to right, 
+      #0594ff, 
+      #a223fa,
+      #ff6967);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+
+/* This is for adding effect to the texts on the homepage */
+.commlab2{
+    font-size: 28px;
+    background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #ff6967;
+    }
+    to {
+      text-shadow: 0 0 30px #a223fa, 0 0 10px #0594ff;
+    }
+}
+
+/* This whole section is for controlling the position and the appearance of the slideshow behind the scene interactive page */
+* {box-sizing:border-box}
+
+#scene {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 23%;
+  align-items: center;
+  align-self: center;
+}
+
+/* This is to hide each photos after each other */
+.mySlides {
+  display: none;
+}
+
+/* This is to control the position and the appearance of the previous and next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: -139%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* This is to position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Upon transitioning from the current photo to the next, this is to add a little bit of shade */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* This is to control the appearance of the number indicator above the slideshow */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+  align-items: center;
+  align-self: center;
+  margin-left: 28%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967
+  );
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 40px #ff6967;
+    }
+    to {
+      text-shadow: 0 0 30px #a223fa, 0 0 10px #0594ff;
+    }
+}
+
+/* This is to combine with the transitioning above to create a fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* .arrow1 and .arrow2 are for controlling the position, appearance, effect of the house gif in the credits and behind the scene pages */
+.arrow1{
+  align-items:center;
+  align-self: center;
+  margin:  430%;
+  align-self: flex-end;
+  margin-bottom: 1%;
+  width: 100px;
+  bottom: 30%;
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+}
+
+.arrow2{
+  align-items:center;
+  align-self: center;
+  margin:  -15%;
+  align-self: flex-end;
+  margin-bottom: 1%;
+  width: 100px;
+  bottom: 30%;
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* This is for controlling the appearance of the content on the credits page */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -15%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 30%;
+}
+
+/* This is to to create rounded images */
+.profile{
+  border-radius: 50%;
+}
+
+/* This is to add effect to the name on the credits page */
+.gradient_profile{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right, 
+    #0594ff, 
+    #a223fa,
+    #ff6967
+  );
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #ff6967;
+    }
+    to {
+      text-shadow: 0 0 30px #a223fa, 0 0 10px #0594ff;
+    }
+}
+
+
+.container_flexbox {
+  display: grid; 
+  grid-template-columns: 30% 25% 35%; 
+  grid-template-rows: 150% 150%; 
+  /* gap: 20px 20px;  */
+  /* background-color: aliceblue; */
+  grid-template-areas: 
+    "fmm fmm video"
+    "comic sound video";
+  margin: auto;
+  margin-top: 0.3%;
+  justify-content: center;
+}
+
+.fmm { grid-area: fmm;   background-image: url(images/panel1.png); background-size: 100%; margin: 0; border-radius: 30px;}
+.comic { grid-area: comic; background-image: url(images/panel2-2.png); background-size: 100%; text-align: center; border-radius: 30px;}
+.sound { grid-area: sound; background-image: url(images/panel3-3.png); background-size: 100%;; text-align: center; border-radius: 30px;}
+.video { grid-area: video; background-image: url(images/panel4-4.png); background-size: 100%;; text-align: center; border-radius: 30px;}
+
+
+
+.fmm{
+-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+/* 
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/background.png);
+  background-size: 100%;
+  margin: 0; */
+
+.text1 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 4px 10px rgba(255, 255, 255, 10);
+}
+
+.text2{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 2);
+}
+
+.text3{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 2);
+}
+
+.text4{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 2);
+}
+
+.comicstrip {
+  color: rgba(234, 240, 246, 0);
+}
+  
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.container_page2{
+  display: grid; 
+  grid-template-columns: 28% 28%; 
+  grid-template-rows: 45% 45%; 
+  /* gap: 20px 20px;  */
+  /* background-color: aliceblue; */
+  grid-template-areas: 
+    "box1 box2"
+    "box3 box4";
+  /* margin: auto; */
+  margin-top: 7.5%;
+  justify-content: center;
+  background-color: white;
+  /* This is for the website to have Full height and no margin */
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0; */
+}
+
+.box1 { grid-area: box1; background-image: url(images/panelpink.png); background-size: 100%; margin: 0; border-radius: 40px;}
+.box2 { grid-area: box2; background-image: url(images/panelorg.png); background-size: 100%; text-align: center; border-radius: 40px;}
+.box3 { grid-area: box3; background-image: url(images/panelgree.png); background-size: 100%;; text-align: center; border-radius: 40px;}
+.box4 { grid-area: box4; background-image: url(images/panelyell.png); background-size: 100%;; text-align: center; border-radius: 40px;}
+
+.hob {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  text-shadow: 2px 4px 10px;
+}
+
+.proj {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.bout {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.cont {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/* CSS for first page */
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#ffffff,transparent);
+  z-index: 1000;
+}
+
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* pointer-events: none; */
+}
+
+.sea{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  font-size: 4.5em;
+  z-index: -9;
+  font-weight: 1000;
+}
+
+.container_page3{
+  display: grid; 
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 50% 50%; 
+  gap: 1px 1px; 
+  /* background-color: aliceblue; */
+  grid-template-areas: 
+    "box11 box22"
+    "box33 box44";
+  /* margin: auto; */
+  margin-top: 7.5%;
+  justify-content: center;
+  background-color: white;
+  /* This is for the website to have Full height and no margin */
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0; */
+}
+
+.box11 { grid-area: box11; background-image:url(images/hobbie1.png); background-size: 100%; margin: 0;}
+.box22 { grid-area: box22; background-image:url(images/hobbie2.png); background-size: 100%; text-align: center;}
+.box33 { grid-area: box33; background-image:url(images/hobbie3.png); background-size: 100%;; text-align: center;}
+.box44 { grid-area: box44; background-image:url(images/hobbie4.png); background-size: 100%;; text-align: center;}
